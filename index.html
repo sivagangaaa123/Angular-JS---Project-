@@ -13,24 +13,25 @@
     <input type="text" ng-model="collegename">
     <center>
         <h1>{{collegeName}}</h1>
-        <p>Name:MERIN</p>
-        <p>Email:merin04@gmail.com</p>
-        <p>Reg No:FIT25MCA2039</p>
-        <p>College:FISAT</p>
-        <p>Course:MCA</p>
-        <p>Department:Computer Application</p>
+        <p>Name:SIVAGANGA</p>
+        <p>Email:siva@gmail.com</p>
          <input type="text" ng-model="totalStudents">
-        <p>Total Student:{{totalStudents}}</p>
-         <input type="text" ng-model="totalFaculty">
          <button ng-click="totalStudents= totalStudents +  1">Add Student</button>
+        <p>Total Student:{{totalStudents}}</p>
+        
+         <input type="text" ng-model="totalFaculty">
+         
         <p>Total Faculty:{{totalFaculty}}</p>
       <h2>Student List</h2>
-      <ul>
+      <button ng-click="showstudents= !showstudents">Show/Hide Students</button>
+      <div ng-if="showDashboard= !showDashboard">
+      <ul ng-hide="showstudents">
         <li ng-repeat="student in students">
             {{student}}
 
         </li>
       </ul>
+      </div>    
     </center>
 
 

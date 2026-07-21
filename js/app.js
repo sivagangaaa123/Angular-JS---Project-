@@ -9,6 +9,11 @@ app.controller("dashboardcontroller", function ($scope) {
         "Shahid", "Aleena", "John", "Sreya"
     ];
     $scope.addstudent=function(){
-        $scope.totalStudents++
+        $scope.totalStudents++;
+        $scope.showstudents=true;
+        $scope.showDashboard=true;
+        
+        
+
     };
 });
